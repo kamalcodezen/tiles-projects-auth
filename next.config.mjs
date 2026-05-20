@@ -2,6 +2,25 @@
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
+  images: {
+    remotePatterns: [
+      // {
+      //   protocol: 'https',
+      //   hostname: 'assets.example.com',
+      //   port: '',
+      //   pathname: '/account123/**',
+      // },
+
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+      {
+        protocol: "http",
+        hostname: "**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
