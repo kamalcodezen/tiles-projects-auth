@@ -25,6 +25,10 @@ const Navbar = () => {
           <p className="font-bold text-xl">ACME</p>
         </div>
 
+        <Link href="/dashboard">
+          <li>Dashboard</li>
+        </Link>
+
         {/* Nav Links */}
         <ul className="flex items-center gap-4">
           {user ? (

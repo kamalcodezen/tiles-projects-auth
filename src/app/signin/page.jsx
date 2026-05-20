@@ -11,6 +11,7 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -30,7 +31,7 @@ const SignInPage = () => {
         // name: userData.name,
         email: userData.email,
         password: userData.password,
-        callbackURL: "/",
+        callbackURL: "/dashboard",
       },
       {
         onRequest: () => {
@@ -108,6 +109,9 @@ const SignInPage = () => {
           <Button type="reset" variant="secondary">
             Reset
           </Button>
+          <Link href="/signup">
+            <Button variant="secondary">SignUp</Button>
+          </Link>
         </div>
       </Form>
     </div>

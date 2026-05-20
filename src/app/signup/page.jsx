@@ -14,6 +14,7 @@ import { useState } from "react";
 
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
+import Link from "next/link";
 
 const SignUpPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -130,6 +131,9 @@ const SignUpPage = () => {
           <Button type="reset" variant="secondary">
             Reset
           </Button>
+          <Link href="/signin">
+            <Button variant="secondary">SignIn</Button>
+          </Link>
         </div>
       </Form>
     </div>
