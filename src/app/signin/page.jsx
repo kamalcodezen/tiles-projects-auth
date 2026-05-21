@@ -1,5 +1,6 @@
 "use client";
 
+import GoogleLogin from "@/components/googleLogin/GoogleLogin";
 import { authClient } from "@/lib/auth-client";
 import { Check, Eye, EyeSlash } from "@gravity-ui/icons";
 import {
@@ -114,6 +115,7 @@ const SignInPage = () => {
           </Link>
         </div>
       </Form>
+      <GoogleLogin />
     </div>
   );
 };
